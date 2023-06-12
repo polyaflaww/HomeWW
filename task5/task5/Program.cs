@@ -9,6 +9,7 @@ var words = text.SelectMany(s => s.ToLower().Split(' ', ',', '.', '!', '?', ';',
 return words;
 }
 
+
 static void PrintMaxDurationMonth(int clientId, List<Record> visits)
 {
 var clientVisits = visits.Where(v => v.ClientID == clientId);
